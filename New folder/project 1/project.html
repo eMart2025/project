@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple E-Commerce Website</title>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <h1>My E-Shop</h1>
+    <nav>
+      <a href="#shop">Shop</a> |
+      <a href="#cart">Cart</a> |
+      <a href="#checkout">Checkout</a>
+    </nav>
+  </header>
+  <hr>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h2>Shop Products</h2>
+
+    <!-- Filters -->
+    <details>
+      <summary>Filter Products</summary>
+      <form>
+        <label><input type="checkbox" name="category" value="clothes"> Clothes</label><br>
+        <label><input type="checkbox" name="category" value="electronics"> Electronics</label><br>
+        <label><input type="checkbox" name="category" value="books"> Books</label><br>
+        <button type="submit">Apply Filters</button>
+      </form>
+    </details>
+    <br>
+
+    <!-- Product Listings -->
+    <article>
+      <h3><a href="#product1">Cool T-Shirt</a></h3>
+      <p>Price: $15</p>
+      <form action="#cart">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </article>
+
+    <article>
+      <h3><a href="#product2">Wireless Headphones</a></h3>
+      <p>Price: $50</p>
+      <form action="#cart">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </article>
+
+    <article>
+      <h3><a href="#product3">Programming Book</a></h3>
+      <p>Price: $25</p>
+      <form action="#cart">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </article>
+  </section>
+
+  <hr>
+
+  <!-- Product Details -->
+  <section id="product1">
+    <h2>Cool T-Shirt</h2>
+    <p>Comfortable cotton T-shirt in multiple sizes and colors.</p>
+    <p>Price: $15</p>
+    <form action="#cart">
+      <button type="submit">Add to Cart</button>
+    </form>
+    <a href="#shop">Back to Shop</a>
+  </section>
+
+  <section id="product2">
+    <h2>Wireless Headphones</h2>
+    <p>Noise-cancelling headphones with 20-hour battery life.</p>
+    <p>Price: $50</p>
+    <form action="#cart">
+      <button type="submit">Add to Cart</button>
+    </form>
+    <a href="#shop">Back to Shop</a>
+  </section>
+
+  <section id="product3">
+    <h2>Programming Book</h2>
+    <p>Learn coding from basics to advanced with this easy guide.</p>
+    <p>Price: $25</p>
+    <form action="#cart">
+      <button type="submit">Add to Cart</button>
+    </form>
+    <a href="#shop">Back to Shop</a>
+  </section>
+
+  <hr>
+
+  <!-- Cart Section -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <table border="1" cellpadding="5">
+      <tr>
+        <th>Product</th><th>Quantity</th><th>Price</th>
+      </tr>
+      <tr>
+        <td>Cool T-Shirt</td><td>1</td><td>$15</td>
+      </tr>
+      <tr>
+        <td>Wireless Headphones</td><td>1</td><td>$50</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td><td></td><td><strong>$65</strong></td>
+      </tr>
+    </table>
+    <br>
+    <a href="#checkout">Proceed to Checkout</a>
+  </section>
+
+  <hr>
+
+  <!-- Checkout Section -->
+  <section id="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <label>Full Name: <input type="text" name="name" required></label><br><br>
+      <label>Email: <input type="email" name="email" required></label><br><br>
+      <label>Address: <input type="text" name="address" required></label><br><br>
+      <label>Payment Method:
+        <select name="payment">
+          <option>Credit Card</option>
+          <option>PayPal</option>
+          <option>Cash on Delivery</option>
+        </select>
+      </label><br><br>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+</body>
+</html>
+
